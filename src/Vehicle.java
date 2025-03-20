@@ -22,20 +22,18 @@ public class Vehicle {
     }
 
     public void setName(int wheels) throws WheelException {
-        try {
-            if (wheels == 1) {
-                name = "Unicycle";
-            }
-            if (wheels == 2) {
-                name = "bicycle";
-            }
-            if (wheels == 3) {
-                name = "tricycle";
-            }
-            if (wheels == 4) {
-                name = "quadcycle";
-            }
-        } catch(WheelException e){
+        if (wheels == 1) {
+            name = "Unicycle";
+        }
+        if (wheels == 2) {
+            name = "bicycle";
+        }
+        if (wheels == 3) {
+            name = "tricycle";
+        }
+        if (wheels == 4) {
+            name = "quadcycle";
+        }else{
             throw new WheelException(wheels);
         }
         this.name = name;
