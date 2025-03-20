@@ -25,13 +25,13 @@ public class Vehicle {
         if (wheels == 1) {
             name = "Unicycle";
         }
-        if (wheels == 2) {
+        else if (wheels == 2) {
             name = "bicycle";
         }
-        if (wheels == 3) {
+        else if (wheels == 3) {
             name = "tricycle";
         }
-        if (wheels == 4) {
+        else if (wheels == 4) {
             name = "quadcycle";
         }else{
             throw new WheelException(wheels);
