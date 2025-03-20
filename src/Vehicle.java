@@ -41,11 +41,11 @@ public class Vehicle {
         this.name = name;
     }
 
-    private Vehicle(){
+    public Vehicle(){
         setNoOfWheels(4);
         setName(getNoOfWheels());
     }
-    private Vehicle(int numberOfWheels){
+    public Vehicle(int numberOfWheels){
         setNoOfWheels(numberOfWheels);
         setName(getNoOfWheels());
     }
